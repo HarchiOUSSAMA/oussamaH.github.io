@@ -1,0 +1,22 @@
+.card{
+  margin: 20px;
+}
+
+.pdp{
+  width: 150px;
+  height: 200px;
+}
+
+#main-wrap {
+  overflow: hidden;
+}
+
+#leftContent {
+  float: left;
+  width: 80%;
+}
+
+#rightContent {
+  float: right;
+  width: 20%;
+}

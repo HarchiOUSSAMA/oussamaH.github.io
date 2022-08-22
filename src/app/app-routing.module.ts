@@ -1,7 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {HowIAmComponent} from './components/how-i-am/how-i-am.component';
+import {AppComponent} from './app.component';
+import {CompetencesComponent} from './components/competences/competences.component';
+import {RecentWorkComponent} from './components/recent-work/recent-work.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:"how_i_am",
+    component: HowIAmComponent
+  },
+  {
+    path:"competences",
+    component: CompetencesComponent
+  },
+  {
+    path:"recent_work",
+    component: RecentWorkComponent
+  },
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
