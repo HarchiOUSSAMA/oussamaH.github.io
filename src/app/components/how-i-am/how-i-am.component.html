@@ -1,28 +1,50 @@
-<div class="card">
-  <div class="card-header">
-    How i am
-  </div>
-  <div class="card-body">
-    <div class="main-wrap">
-      <div id="leftContent">
-        <h5 class="card-title">Oussama Harchi</h5>
-        <p class="card-text">Full Stack Developer | ZSoft Consulting | ENSIAS |</p>
-        <div  *ngIf="affichage">
-          <p>
-            Ingénieur d'état en ingénierie du Web et Informatique Mobile (IWIM) à l'École Nationale Supérieure d'Informatique et d'Analyse des Systèmes (ENSIAS).
-          </p>
-          <p style="margin-left: 100px">Dans ce site je te donne une vue global sur moi est sur mes expériences</p>
+<div class="card" style="top:75px">
+    <div class="card-header">
+      How i am ?
+    </div>
+    <div class="card-body">
+      <div class="main-wrap">
+        <div id="leftContent">
+          <h5 class="glitched" style="margin-left: 10px">Oussama Harchi</h5>
+          <div class="alert alert-primary" role="alert" style="overflow: hidden;">
+            <p class="card-text" style="  float: left;">Full Stack Developer | ZSoft Consulting | ENSIAS |</p>
+            <div *ngIf="!affichage" class="spinner-grow text-success" role="status"  style="float: right;width: 10px;height: 10px" >
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <div *ngIf="affichage">
+            <p>
+              Ingénieur d'état en ingénierie du Web et Informatique Mobile (IWIM) à l'École Nationale Supérieure d'Informatique et d'Analyse des Systèmes (ENSIAS).
+            </p>
+            <p style="margin-left: 100px">Dans ce site je te donne une vue global sur moi est sur mes expériences</p>
+            <p>
+              Wikipédia est un projet d’encyclopédie collective en ligne, universelle, multilingue et fonctionnant sur le principe du wiki. Ce projet vise à offrir un contenu librement réutilisable, objectif et vérifiable, que chacun peut modifier et améliorer.
+
+              Wikipédia est définie par des principes fondateurs. Son contenu est sous licence Creative Commons BY-SA. Il peut être copié et réutilisé sous la même licence, sous réserve d'en respecter les conditions. Wikipédia fournit tous ses contenus gratuitement, sans publicité, et sans recourir à l'exploitation des données personnelles de ses utilisateurs.
+
+              Les rédacteurs des articles de Wikipédia sont bénévoles. Ils coordonnent leurs efforts au sein d'une communauté collaborative, sans dirigeant.
+
+              Aujourd'hui, Wikipédia en français compte :
+            </p>
+
+            <p>
+              Wikipédia est un projet d’encyclopédie collective en ligne, universelle, multilingue et fonctionnant sur le principe du wiki. Ce projet vise à offrir un contenu librement réutilisable, objectif et vérifiable, que chacun peut modifier et améliorer.
+
+              Wikipédia est définie par des principes fondateurs. Son contenu est sous licence Creative Commons BY-SA. Il peut être copié et réutilisé sous la même licence, sous réserve d'en respecter les conditions. Wikipédia fournit tous ses contenus gratuitement, sans publicité, et sans recourir à l'exploitation des données personnelles de ses utilisateurs.
+
+              Les rédacteurs des articles de Wikipédia sont bénévoles. Ils coordonnent leurs efforts au sein d'une communauté collaborative, sans dirigeant.
+
+              Aujourd'hui, Wikipédia en français compte :
+            </p>
+          </div>
+        </div>
+        <div id="rightContent">
+          <img class="pdp" src="assets/imgs/photo_profil.jpg" style="margin-left: 73px">
+          <br><br>
+          <button *ngIf="!affichage" class="btn btn-dark" style="position:relative; display:inline-block; float:right; background-color: cadetblue" (click)="affichier()">See more about me</button>
+          <button  *ngIf="affichage" class="btn btn-dark" style="position:relative; display:inline-block; float:right; background-color: red" (click)="affichier()">See less about me</button>
         </div>
       </div>
-      <div id="rightContent">
-        <img class="pdp" src="assets/imgs/photo_profil.jpg">
-        <br><br>
-        <button *ngIf="!affichage" class="btn btn-dark" style="position:relative; display:inline-block; float:right;" (click)="affichier()">See more about me</button>
-        <button  *ngIf="affichage" class="btn btn-dark" style="position:relative; display:inline-block; float:right;" (click)="affichier()">See less about me</button>
-      </div>
     </div>
-
   </div>
-
-</div>
 

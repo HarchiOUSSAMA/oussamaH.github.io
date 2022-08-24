@@ -8,6 +8,8 @@ import {HowIAmComponent} from './components/how-i-am/how-i-am.component';
 import { CompetencesComponent } from './components/competences/competences.component';
 import { RecentWorkComponent } from './components/recent-work/recent-work.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { BlogsComponent } from './components/blogs/blogs.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { FooterComponent } from './components/footer/footer.component';
     HowIAmComponent,
     CompetencesComponent,
     RecentWorkComponent,
-    FooterComponent
+    FooterComponent,
+    HomePageComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,
