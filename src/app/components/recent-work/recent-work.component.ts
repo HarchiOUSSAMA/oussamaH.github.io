@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentWorkComponent implements OnInit {
 
+  public affichageOne=false;
+  public affichageTwo=false;
+  public affichageTree=false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public descriptionOne():void{
+    this.affichageOne=!this.affichageOne;
+  }
+  public descriptionTwo():void{
+    this.affichageTwo=!this.affichageTwo;
+  }
+  public descriptionTree():void{
+    this.affichageTree=!this.affichageTree;
   }
 
 }

@@ -1,33 +1,134 @@
 
 <div class="flex-container">
-  <div>
-    <div class="card" style="width: 18rem;">
+  <div style="margin-left: 50px">
+    <div class="card" style="width: 19rem;">
 
       <div class="card-body">
         <h5 class="card-title">Capitale Degital</h5>
-        <img src="assets/imgs/img.png" >
-        <p class="card-text">Stage 1 ére année</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <img src="assets/imgs/img.png" style="height: 100px; width: 100px;" >
+        <p class="small">Stage 1 ére année</p>
+        <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" (click)="descriptionOne()">
+            <div *ngIf="!affichageOne">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
+              </svg>
+              <p class="small" style="color: red">more description</p>
+            </div>
+            <div *ngIf="affichageOne">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+              </svg>
+            </div>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <br>
+          <div class="card" style="width: 17rem;">
+            <div class="card-body">
+              <h5 class="card-title">Projet : application "lead Scoring"</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Août 2020 - Septembre 2020</h6>
+              <h6 class="mb-3">Le lead scoring a pour principal objectif de distinguer les leads qui
+                sont susceptibles de devenir rapidement des clients et qui entre dans
+                la cible prioritaires de l'entreprise.
+              </h6>
+              <h6 class="card-subtitle mb-2 text-muted">domaine : analyse de données et machine learning</h6>
+              <ul >
+                <li><h6 class="mb-3">importation du données</h6></li>
+                <li><h6 class="mb-3">nettoyage du données</h6></li>
+                <li><h6 class="mb-3">intégration du regression logistique.</h6></li>
+                <li><h6 class="mb-3">résoudre le probléme du déséquilibre dans les données par le
+                  rééchantillonnage ( Suréchantillon || sous-échantillonnage )
+                </h6></li>
+                <li><h6 class="mb-3">évaluer le modèle de prédiction ( Validation croisée )</h6></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 19rem;">
       <div class="card-body">
         <h5 class="card-title">Solpack</h5>
-        <img src="assets/imgs/sopack.jpg" style="height: 170px; width: 170px;">
+        <img src="assets/imgs/sopack.jpg" style="height: 100px; width: 100px;">
         <p class="card-text">Stage 2 éme année</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingtwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo" (click)="descriptionTwo()">
+              <div *ngIf="!affichageTwo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
+              </svg>
+                <p class="small" style="color: red">more description</p>
+              </div>
+              <div *ngIf="affichageTwo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+              </svg>
+              </div>
+            </button>
+          </h2>
+          <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <br>
+            <div class="card" style="width: 17rem;">
+              <div class="card-body">
+                <h5 class="card-title">Projet : Réalisation d’une application web SAAS de gestion des chèques.</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Juillet 2021 - Septembre 2021</h6>
+                <ul >
+                  <li><h6 class="mb-3">Apprendre IOC</h6></li>
+                  <li><h6 class="mb-3">Conception ( application fernée à la modification et ouverte à l'extension )
+                  </h6></li>
+                  <li><h6 class="mb-3">se familiariser avec AOP</h6></li>
+                  <li><h6 class="mb-3">faire des test unitaires</h6></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div>
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 19rem;">
       <div class="card-body">
         <h5 class="card-title">Zsoft</h5>
-        <img src="assets/imgs/Zsoft.jpg" style="height: 170px; width: 170px;">
+        <img src="assets/imgs/Zsoft.jpg" style="height: 100px; width: 100px;">
         <p class="card-text">Stage 3 éme année</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingtree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetree" aria-expanded="false" aria-controls="collapsetwo" (click)="descriptionTree()">
+              <div *ngIf="!affichageTree">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
+                </svg>
+                <p class="small" style="color: red">more description</p>
+              </div>
+              <div *ngIf="affichageTree">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                  <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+                </svg>
+              </div>
+            </button>
+          </h2>
+          <div id="collapsetree" class="accordion-collapse collapse" aria-labelledby="headingtree" data-bs-parent="#accordionExample">
+            <br>
+            <div class="card" style="width: 17rem;">
+              <div class="card-body">
+                <h5 class="card-title">Projet : Hiring Master</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Avril 2022 - Octobre 2022</h6>
+                <h6 class="mb-3">Une plateforme SIRH destinée à la gestion du processus de
+                  recrutement : diffusion automatique des offres, acquisition des
+                  candidatures, évaluation des candidats, gestion collaborative du
+                  recrutement.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
