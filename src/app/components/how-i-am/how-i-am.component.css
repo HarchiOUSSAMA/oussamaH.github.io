@@ -37,7 +37,7 @@
 }
 
 .dynamic-txts li{
-  color: red;
+  color: blue;
   list-style: none;
   font-size: 22px;
   font-weight: 100;
@@ -64,7 +64,7 @@
   height: 100%;
   width: 100%;
   background: white;
-  border-left: 2px solid red;
+  border-left: 2px solid blue;
   animation: typing 2s steps(10) infinite;
 }
 @keyframes typing {
