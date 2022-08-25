@@ -10,6 +10,8 @@ import { RecentWorkComponent } from './components/recent-work/recent-work.compon
 import { FooterComponent } from './components/footer/footer.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -21,12 +23,14 @@ import { BlogsComponent } from './components/blogs/blogs.component';
     RecentWorkComponent,
     FooterComponent,
     HomePageComponent,
-    BlogsComponent
+    BlogsComponent,
+    ContactMeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

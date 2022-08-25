@@ -6,6 +6,7 @@ import {CompetencesComponent} from './components/competences/competences.compone
 import {RecentWorkComponent} from './components/recent-work/recent-work.component';
 import {HomePageComponent} from './components/home-page/home-page.component';
 import {BlogsComponent} from './components/blogs/blogs.component';
+import {ContactMeComponent} from './components/contact-me/contact-me.component';
 
 const routes: Routes = [
   {
@@ -31,7 +32,12 @@ const routes: Routes = [
   {
     path:'app-blogs',
     component: BlogsComponent
+  },
+  {
+    path:'contact-me',
+    component: ContactMeComponent
   }
+
 
 ];
 
