@@ -1,11 +1,76 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<br>
+<form class="container example">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
 <div class="card mb-3" style="margin: 80px">
   <div class="alert alert-warning" role="alert" style="margin: 20px">
-    A simple warning alert—check it out!
+    pourquoi java !
   </div>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text">Java est un langage de programmation orienté objet créé dans les années 1990 par James Gosling et Patrick Naughton, employés de Sun Microsystems. Oracle rachète la société Sun Microsystems en 2009, Java appartient donc désormais à Oracle. </p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div>
+      <div *ngIf="!blogAffiche">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo" (click)="descriptionBlogOne()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16" >
+          <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
+        </svg>
+        </button>
+        <p class="small" style="color: red">more description</p>
+      </div>
+      <div *ngIf="blogAffiche">
+        <h1> Les applications de production sont souvent écrites en langage Java</h1>
+        Selon Oracle, Java est le langage le plus utilisé dans le DevOps, l’intelligence artificielle, la réalité virtuelle, le big data, l’intégration continue, les chatbots et bien d’autres domaines.
+
+        Très souvent, les systèmes de production sont donc écrits en Java. La création de modèles data ou de projets data en langage Java facilite donc l’intégration de celui-ci dans l’application de production existante. Utiliser un autre langage ajouterait alors un niveau de complexité inutile. De plus, ces entreprises possèdent parfois des développeurs Java, ce qui permettra de mutualiser des ressources pour les projets data.
+
+        Java étant très utilisé, il est souvent mis à jour et enrichi de nouvelles fonctionnalités, comme c’est le cas avec Java 14.
+
+        <h1 class="small"> De nombreuses bibliothèques de big data sont écrites en Java</h1>
+        Bien qu’il y ait moins de bibliothèques en Java qu’en R, il y en a quand même beaucoup. La librairie standard de Java est assez riche pour le traitement de données, avec notamment les collections, les outils d’entrées/sorties, les flux de données et les exécutions de tâches en parallèle.
+
+        Il existe aussi de très puissantes extensions de la librairie standard comme Google Guava et Apache Common Collections pour les collections, Apache Commons IO pour les entrées/sorties ou AOL Cyclops-React.
+
+        La plupart des bibliothèques de big data pour le traitement de données distribuées sont écrites dans les langages de programmation Java ou JVM, tels qu’Apache Hadoop, Apache Spark ou Apache Flink.
+
+        Il existe également des librairies pour les calculs mathématiques plus poussés comme Apache Commons Math, Apache Mahout ou JBlas.
+
+        Java n’est pas en reste concernant les libraires de machine learning, data mining et réseaux de neurones. On citera, par exemple, Weka, Smile, JSAT, H2O, Encog et DeepLearning4j.
+
+        Le logiciel Apache Nifi, qui permet de gérer et d’automatiser des flux de données entre plusieurs systèmes informatiques, possède des extensions qui s’exécutent dans la machine virtuelle de Java et permet de développer ses propres modules en Java.
+
+        <h1>Java est un langage de typage statique</h1>
+        Un langage est typé statiquement si, avant de s’exécuter, le code source passe par une phase de vérification des types. Si le langage est compilé, cette phase est souvent comprise dans le compilateur, mais il existe aussi des implémentations interprétées de langages qui ont un typage statique.
+
+        Java est un langage de programmation avec un typage statique. Ce typage présente l’avantage de prévenir d’une erreur avant l’exécution et d’éviter les erreurs « bêtes » qui seront détectées à la compilation. Cela permet donc de gagner du temps lors du développement et de simplifier la maintenance du code.
+
+        Le typage statique permet également de meilleures performances, car une fois le contrôle de typage effectué, le compilateur peut se débarrasser des informations de typage qu’il a accumulées, ce qui n’est pas le cas avec un typage dynamique.
+
+        <h1> Java permet l’utilisation de Maven </h1>
+        Apache Maven, généralement nommé Maven, est un outil de gestion et d’automatisation de production des projets logiciels Java. Il est utilisé pour automatiser l’intégration continue lors d’un développement de logiciel.
+
+        Son utilisation dans les projets développés en Java rend très facile l’intégration de nouvelles bibliothèques. Maven gère la collaboration d’équipe, la compilation, la distribution, la documentation et les tâches séparées de manière transparente, ce qui sera très utile pour vos projets datas.
+
+        <h1>Java : une exécution rapide du code</h1>
+        Le langage de programmation Java est idéal pour les systèmes à grande échelle.
+
+        En effet, si on le compare au langage Python et au R, qui sont généralement utilisés pour les projets data, dans le cas des systèmes à grande échelle, alors Python est plus rapide que le langage R et Java est encore plus rapide que Python, ce qui fait de Java le meilleur choix.
+
+        Java présente donc de nombreuses bonnes raisons pour son adoption dans les projets data. Il est très utilisé dans les applications et possède de nombreuses bibliothèques dont l’intégration est rendue facile grâce à l’utilisation de Maven. Enfin, le typage statique de Java permet d’éviter les erreurs et l’exécution de son code est rapide.
+      </div>
+
+      <div *ngIf="blogAffiche">
+        <br>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo" (click)="descriptionBlogOne()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 <div class="card mb-3" style="margin: 80px">

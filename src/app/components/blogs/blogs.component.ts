@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogsComponent implements OnInit {
 
+  public blogAffiche : boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  descriptionBlogOne (): void{
+    this.blogAffiche=!this.blogAffiche;
   }
 
 }
