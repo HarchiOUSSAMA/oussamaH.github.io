@@ -9,6 +9,10 @@ import {BlogsComponent} from './components/blogs/blogs.component';
 
 const routes: Routes = [
   {
+    path:"",
+    component: HomePageComponent
+  },
+  {
     path:"how_i_am",
     component: HowIAmComponent
   },

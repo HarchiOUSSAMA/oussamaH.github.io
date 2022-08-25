@@ -20,3 +20,56 @@
   float: right;
   width: 20%;
 }
+
+.wrapper{
+  display: inline-flex;
+}
+.wrapper .static-txt{
+  color: black;
+  font-size: 15px;
+  font-weight: 80;
+  margin-left: 60px;
+}
+.wrapper .dynamic-txts{
+  margin-left: 0px;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+.dynamic-txts li{
+  color: red;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 100;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(1) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+
+
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 2px solid red;
+  animation: typing 2s steps(10) infinite;
+}
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
